@@ -155,5 +155,5 @@ npm run dev
 ## 👨‍💻 Author
 
 **Praveen Puthran**
-* GitHub: [@Praveen98592](https://github.com/Praveen98592)[cite: 1]
+* GitHub: [@Praveen98592](https://github.com/Praveen98592)
 * LinkedIn: [Praveen Puthran](https://www.linkedin.com/in/praveen-puthran)
