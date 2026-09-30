@@ -1,0 +1,34 @@
+@SmartNotesApi_HostAddress = http://localhost:5013
+
+GET {{SmartNotesApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+### 1. Get all notes (Ordered by CreatedAt descending)
+GET {{SmartNotesApi_HostAddress}}/api/notes
+Accept: application/json
+
+
+### 2. Save a new note
+POST {{SmartNotesApi_HostAddress}}/api/notes
+Content-Type: application/json
+{
+  "id": 0,
+  "title": "Review EF Core Migration",
+  "content": "Praveen needs to review the EF Core migration script by Thursday. LocalDB connections must be tested before release.",
+  "summary": "- [ ] Review EF Core migration script (Praveen, by Thursday)\n- [ ] Test LocalDB connections prior to release"
+}
+
+### 3. Test AI Multi-Mode Processing (Summarize / Action Items / Q&A)
+POST {{SmartNotesApi_HostAddress}}/api/ai/process
+Content-Type: application/json
+{
+  "content": "Meeting today: Fix bug #102 by Friday.",
+  "mode": "action_items"
+}
+
+
+### 4. Delete a note by ID (Replace 1 with an existing note ID)
+DELETE {{SmartNotesApi_HostAddress}}/api/notes/19
+

@@ -1,0 +1,16 @@
+# === C# / .NET (Build outputs & temp files) ===
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# === React / Frontend (Dependencies & builds) ===
+node_modules/
+dist/
+.env
+
+# === Local Database / Logs ===
+*.mdf
+*.ldf
+*.log
